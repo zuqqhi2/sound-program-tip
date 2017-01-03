@@ -19,6 +19,6 @@ function plot_power_spectrum_of(title_str, filename, y_axis_max)
   axis([0 15000 0 y_axis_max]);
   xlabel('Frequency [Hz]');
   ylabel('Amplitude');
-  plot(f0, 2*abs(y0(n/2:n-1,:))/n);
+  plot(f0, 2*abs(power_y0(n/2:n-1,:))/n);
   hold off;
 end
